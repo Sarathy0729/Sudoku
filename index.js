@@ -32,6 +32,7 @@ function isValid(board, row, col, num) {
 }
 
 function solveSudoku(board) {
+    console.log("hello World");
     for (let row = 0; row < 9; row++) {
         for (let col = 0; col < 9; col++) {
             if (board[row][col] === 0) {
@@ -52,6 +53,7 @@ function solveSudoku(board) {
 }
 
 function generateRandom9x9() {
+    console.log("Hello Game")
     let numbers = shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9]);
     for (let i = 0; i < 9; i++) {
         box[Math.floor(i / 3) * 3 + Math.floor(i / 3)][(i % 3) * 3 + (i % 3)] = numbers[i];
